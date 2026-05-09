@@ -1,0 +1,39 @@
+# Ignore output files and temporary data
+agent-skills/*/scripts/output/
+agent-skills/*/scripts/__pycache__/
+agent-skills/*/scripts/*.log
+agent-skills/*/scripts/*.tmp
+
+# Ignore any local configuration files
+*.local.yaml
+*.local.json
+
+# Ignore any cached data
+*.cache
+*.db
+*.sqlite
+
+# Ignore credentials and secrets
+secrets.json
+.env
+.env.local
+*.key
+*.pem
+
+# Ignore large files
+*.pdf
+*.zip
+*.tar.gz
+*.tgz
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore editor files
+*.swp
+*.swo
+*~
+
+# Ignore node_modules
+node_modules/
