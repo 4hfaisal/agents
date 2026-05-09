@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Tech News Digest Test Script
+# Manual test of the complete workflow
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/scripts" && pwd)"
+cd "$SCRIPT_DIR"
+
+echo "🧪 Testing Tech News Digest Workflow"
+echo "===================================="
+
+# Create sample data first
+echo "📋 Creating sample news data..."
+python3 test-simple.py
+
+echo ""
+echo "📧 Testing email sending..."
+python3 send-email.py
+
+echo ""
+echo "✅ Test completed successfully!"
+echo "📨 Email should be sent to faisal.homodi@gmail.com"
+echo ""
+echo "🔧 Next steps:"
+echo "   1. Review the email received"
+echo "   2. Customize sources in references/sources.yaml"
+echo "   3. Set up automatic scheduling with setup-systemd.sh"
+echo "   4. Test real RSS feeds when dependencies are available"

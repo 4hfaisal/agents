@@ -1,0 +1,59 @@
+# Tech News Sources Configuration
+# Add/remove RSS feeds and websites for daily digest
+
+sources:
+  - name: "TechCrunch"
+    url: "https://techcrunch.com/feed/"
+    type: "rss"
+    category: "Startups & Tech News"
+    priority: 10
+    
+  - name: "Hacker News Top"
+    url: "https://news.ycombinator.com/rss"
+    type: "rss"
+    category: "Developer News"
+    priority: 9
+    
+  - name: "The Verge"
+    url: "https://www.theverge.com/rss/index.xml"
+    type: "rss"
+    category: "Tech & Culture"
+    priority: 8
+    
+  - name: "Ars Technica"
+    url: "https://feeds.arstechnica.com/arstechnica/index"
+    type: "rss"
+    category: "Tech Deep Dive"
+    priority: 7
+    
+  - name: "GitHub Blog"
+    url: "https://github.blog/feed/"
+    type: "rss"
+    category: "Development"
+    priority: 6
+
+# Filter keywords (optional)
+keywords:
+  include:
+    - "AI"
+    - "artificial intelligence"
+    - "machine learning"
+    - "OpenAI"
+    - "startup"
+    - "funding"
+    - "venture capital"
+    - "SaaS"
+    - "cloud"
+    - "developer"
+    
+  exclude:
+    - "sports"
+    - "politics"
+    - "celebrity"
+
+# Email settings
+email:
+  recipient: "faisal.homodi@gmail.com"
+  subject_prefix: "Tech News Digest"
+  max_items_per_source: 5
+  max_total_items: 15

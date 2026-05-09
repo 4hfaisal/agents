@@ -1,0 +1,66 @@
+# LinkedIn Companies to Monitor
+# Add companies you want to track for official news and posts
+
+companies:
+  - name: "HUMAIN"
+    linkedin_url: "https://linkedin.com/company/humain"
+    priority: 15
+    
+  - name: "Cyberani"
+    linkedin_url: "https://linkedin.com/company/cyberani"
+    priority: 14
+    
+  - name: "CNTXT"
+    linkedin_url: "https://linkedin.com/company/cntxt"
+    priority: 13
+    
+  - name: "OpenAI"
+    linkedin_url: "https://linkedin.com/company/openai"
+    priority: 10
+    
+  - name: "GitHub"
+    linkedin_url: "https://linkedin.com/company/github"
+    priority: 9
+    
+  - name: "Microsoft"
+    linkedin_url: "https://linkedin.com/company/microsoft"
+    priority: 8
+    
+  - name: "Google"
+    linkedin_url: "https://linkedin.com/company/google"
+    priority: 8
+    
+  - name: "Amazon"
+    linkedin_url: "https://linkedin.com/company/amazon"
+    priority: 7
+    
+  - name: "Apple"
+    linkedin_url: "https://linkedin.com/company/apple"
+    priority: 7
+    
+  - name: "Meta"
+    linkedin_url: "https://linkedin.com/company/meta"
+    priority: 7
+    
+  - name: "Netflix"
+    linkedin_url: "https://linkedin.com/company/netflix"
+    priority: 6
+
+# LinkedIn API Configuration (when available)
+api_settings:
+  max_posts_per_company: 3
+  post_age_limit_days: 7
+  include_post_types:
+    - "company_update"
+    - "article"
+    - "news"
+  exclude_post_types:
+    - "job_posting"
+    - "comment"
+    - "reaction"
+
+# Manual monitoring settings (if API not available)
+manual_monitoring:
+  check_frequency_hours: 24
+  max_companies_per_run: 10
+  fallback_to_web: true
